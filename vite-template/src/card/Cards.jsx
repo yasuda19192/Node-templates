@@ -12,7 +12,7 @@ const Cards = () => {
     ]
     let joker = []
     joker.className = "joker",
-        joker.number = "  ",
+        joker.number = "",
         joker.class = "j"
     cards.push(joker);
     cards.push(joker);
@@ -40,6 +40,20 @@ const Cards = () => {
     }
     shuffle(cards);
     console.log(cards)
+        // ****************************************************************//
+        // ひっくり返されたものが一枚目なら二枚目をめくれる。
+        // 二枚目がひっくり返されたら数字が同じかどうかの判定を行う。
+        // 判定：：
+        //     同じ
+        //         ならばそのカードを消す。
+        //         点数を追加。
+        //     違う
+        //         ひっくり返したカードを元に戻す。
+        // ****************************************************************//
+    function game() {
+
+
+    }
     return (
         <>
             <p>cards</p>
