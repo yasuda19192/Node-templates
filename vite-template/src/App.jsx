@@ -6,7 +6,6 @@ import Cards from './card/Cards'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <>
       <Cards />

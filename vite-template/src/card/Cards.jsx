@@ -10,12 +10,12 @@ const Cards = () => {
         '♧',
         '♢'
     ]
-let joker = []
-joker.className = "joker",
-joker.number = "  ",
-joker.class = "j"
-cards.push(joker);
-cards.push(joker);
+    let joker = []
+    joker.className = "joker",
+        joker.number = "  ",
+        joker.class = "j"
+    cards.push(joker);
+    cards.push(joker);
     for (let i = 0; i <= 3; i++) {
         for (let j = 1; j <= 12; j++) {
             let card = [];
@@ -34,6 +34,10 @@ cards.push(joker);
         }
         return array;
     }
+
+    function turn(e) {
+        e.currentTarget.classList.toggle('show');
+    }
     shuffle(cards);
     console.log(cards)
     return (
@@ -41,9 +45,14 @@ cards.push(joker);
             <p>cards</p>
             <div className="card">
                 {cards.map((data => (
-                    <div className={data.className}>
-                        <p className='number'>{data.number}</p>
-                        <p className='mark'>{data.class}</p>
+                    <div key={data.index} className={` ${data.className}`} onClick={turn} >
+                        <section className="obverse">
+                            <p className='number'>{data.number}</p>
+                            <p className='mark'>{data.class}</p>
+                        </section>
+                        <section className="behind">
+                            behind
+                        </section>
                     </div>
                 )))}
             </div>
