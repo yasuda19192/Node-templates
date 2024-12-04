@@ -1,0 +1,104 @@
+:root {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.card div {
+  position: relative;
+  width: 20%;
+  aspect-ratio: 57/89;
+  border: 4px solid white;
+  border-radius: 16px;
+  box-shadow: 1px 1px blueviolet;
+  margin-bottom: 2%;
+  position: relative;
+}
+
+.♤ {
+  background-color: aqua;
+}
+
+.♡ {
+  background-color: pink;
+}
+
+.♧ {
+  background-color: yellowgreen;
+}
+
+.♢ {
+  background-color: aquamarine;
+}
+
+.joker {
+  background-color: blueviolet;
+}
+
+.number {
+  display: block;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0.5rem;
+  font-size: 150%;
+  color: black;
+}
+
+.mark {
+  top: 50%;
+  left: 50%;
+  margin-top: 50%;
+  font-size: 300%;
+  color: black;
+  font-weight: bold;
+}
+
+.card div:hover {
+  opacity: 0.8;
+  transform: scale(0.99);
+}
+
+section {
+  .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+  }
+
+  .mark {
+    position: absolute;
+    font-size: 24px;
+    top: -35%;
+    left: 0;
+  }
+}
+
+.obverse {
+  opacity: 0;
+}
+
+.show .obverse {
+  opacity: 1;
+}
+
+.behind {
+  position: absolute;
+}
+
+.show .behind {
+  opacity: 0;
+}
+
+.bingo .behind {
+  opacity: 0;
+}
+.bingo .obverse{
+  opacity: .5;
+
+}
