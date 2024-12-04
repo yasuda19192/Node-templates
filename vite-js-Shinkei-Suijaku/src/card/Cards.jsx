@@ -1,4 +1,3 @@
-import { RANDOM } from "mysql/lib/PoolSelector";
 import React, { useState } from "react";
 
 import "./Cards.css";
